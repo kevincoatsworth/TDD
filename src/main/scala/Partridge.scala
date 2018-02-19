@@ -8,14 +8,5 @@ object Partridge {
       case 0 => "Lynn, I've pierced my foot on a spike!!"
       case n => "Mines a Pint" + "!" * n
     }
-
-    /*
-    if(matches == 0) {
-      "Lynn, I've pierced my foot on a spike!!"
-    }
-    else{
-      "Mines a Pint" + "!" * matches
-    }
-    */
   }
 }
