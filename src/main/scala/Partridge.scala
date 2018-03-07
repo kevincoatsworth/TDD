@@ -1,4 +1,4 @@
-object Partridge {
+object Partridge extends App {
 
   def part(args: Array[String]): String = {
 

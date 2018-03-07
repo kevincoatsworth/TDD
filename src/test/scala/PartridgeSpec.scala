@@ -46,6 +46,13 @@ class PartridgeSpec extends WordSpec with MustMatchers {
         Partridge.part(Array("AlphaPapa", "Nomad", "Partridge", "PearTree", "Chat", "Toblerone", "Dan", "Nomad")) mustEqual "Mines a Pint!!!!!!!!"
       }
 
+      "Mines a Pint!!!!!!!!' if one keyword matches along with an Int in a String" in {
+        Partridge.part(Array("PearTree", "2")) mustEqual "Mines a Pint!"
+      }
+
+      "Mines a Pint!!!!!!!!' if one keyword entered twice in a String" in {
+        Partridge.part(Array("PearTreePearTree")) mustEqual "Lynn, I've pierced my foot on a spike!!"
+      }
     }
   }
 }
