@@ -1,6 +1,7 @@
 object Cypher {
 
   def apply(input: String, key: Int): List[Int] = {
+
     val initialNumbers: List[Int] = input.map(char => letterToNumber(char)).toList
     val zipped = initialNumbers.zip(expandKeys(key, initialNumbers.length))
     zipped.map(x => x._1 + x._2)

@@ -26,6 +26,7 @@ class CypherSpec extends WordSpec with MustMatchers {
       Cypher("masterpiece",1939) mustEqual List(14,10,22,29,6,27,19,18,6,12,8)
     }
   }
+
   "Letter to Number" must {
     "return 1 when given `a`" in {
       Cypher.letterToNumber('a') mustEqual 1
